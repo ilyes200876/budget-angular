@@ -7,15 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import { TransactionFormComponent } from './transaction-form/transaction-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TransactionComponent,
-    HeaderComponent,
-    TransactionFormComponent
+    HeaderComponent
+
   ],
   imports: [
     BrowserModule,

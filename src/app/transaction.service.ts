@@ -17,4 +17,15 @@ export class TransactionService {
   fetchById(i: number){
     return TRANSACTIONS[i-1];
   }
+
+  calculateDifference(transaction: ITransaction){
+    let result =0;
+    if(transaction.category == "Dépense"){
+      result = result + transaction.value;
+    }else{
+      result = result - transaction.value
+    }
+    
+    return result
+  }
 }

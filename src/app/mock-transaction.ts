@@ -4,72 +4,72 @@ import { ITransaction } from "./itransaction";
 export const TRANSACTIONS: ITransaction[] = [
   {
     id: 1,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "Les courses",
+    value: 250,
+    category: "Dépense",
     created: new Date()
   },
   {
     id: 2,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "salaire",
+    value: 1500,
+    category: "Entrée",
     created: new Date()
   },
   {
     id: 3,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "AAH",
+    value: 950,
+    category: "Entrée",
     created: new Date()
   },
   {
     id: 4,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "facture de téléphone",
+    value: 65,
+    category: "Dépense",
     created: new Date()
   },
   {
     id: 5,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "VIsite voiture",
+    value: 150,
+    category: "Dépense",
     created: new Date()
   },
   {
     id: 6,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "Achat de vêtements",
+    value: 350,
+    category: "Dépense",
     created: new Date()
   },
   {
     id: 7,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "assurance voiture",
+    value: 67,
+    category: "Dépense",
     created: new Date()
   },
   {
     id: 8,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "RSA",
+    value: 450,
+    category: "Entrée",
     created: new Date()
   },
   {
     id: 9,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "vente de mon canapé",
+    value: 500,
+    category: "Entrée",
     created: new Date()
   },
   {
     id: 10,
-    title: "Bulbizarre",
-    value: 25,
-    category: "",
+    title: "loyer",
+    value: 750,
+    category: "Dépense",
     created: new Date()
   }
 ];

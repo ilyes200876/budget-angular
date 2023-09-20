@@ -1,1 +1,35 @@
-<p>transaction works!</p>
+
+
+
+<div class="container my-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Titre</th>
+        <th scope="col">La date</th>
+        <th scope="col">Le montant</th>
+        <th scope="col">La cattégorie</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let transaction of transactions">
+      <tr *ngIf="transaction.category == 'Dépense'">
+        <th scope="row">{{ transaction.id }}</th>
+        <td class="colorRed">{{ transaction.title }}</td>
+        <td class="colorRed">{{ transaction.created | date: "shortDate" }}</td>
+        <td class="colorRed">{{ transaction.value }} €</td>
+        <td class="colorRed">{{ transaction.category }}</td>
+      </tr>
+      <tr *ngIf="transaction.category == 'Entrée'">
+        <th scope="row">{{ transaction.id }}</th>
+        <td class="colorGreen">{{ transaction.title }}</td>
+        <td class="colorGreen">{{ transaction.created | date: "shortDate" }}</td>
+        <td class="colorGreen">{{ transaction.value }} €</td>
+        <td class="colorGreen">{{ transaction.category }}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<app-transaction-form [transactionAdd]="transactionParent"></app-transaction-form>

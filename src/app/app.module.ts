@@ -5,16 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TransactionComponent } from './transaction/transaction.component';
+import { HeaderComponent } from './header/header.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { TransactionFormComponent } from './transaction-form/transaction-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TransactionComponent
+    TransactionComponent,
+    HeaderComponent,
+    TransactionFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
